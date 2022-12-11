@@ -10,6 +10,10 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
+deployment:
+  targets:
+    - url: "s3://blog.gustavclausen.com?region=eu-west-1"
+      cloudFrontDistributionID: "E37TXUQ5MDRH1E"
 params:
   env: production
   title: Blog of Gus
